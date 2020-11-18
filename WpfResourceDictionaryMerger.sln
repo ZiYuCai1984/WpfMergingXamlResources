@@ -1,19 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.64
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainApp", "MainApp.csproj", "{F2820E35-AF6D-4C1E-9848-2D8981F8B6EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainApp", "MainApp\MainApp.csproj", "{F2820E35-AF6D-4C1E-9848-2D8981F8B6EA}"
 	ProjectSection(ProjectDependencies) = postProject
 		{599BA654-64EB-4C1C-B191-22AFDD3CFC38} = {599BA654-64EB-4C1C-B191-22AFDD3CFC38}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "..\Controls\Controls.csproj", "{90EA3D9F-15B8-4DA7-A0E7-FEF0E2212934}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controls", "Controls\Controls.csproj", "{90EA3D9F-15B8-4DA7-A0E7-FEF0E2212934}"
 	ProjectSection(ProjectDependencies) = postProject
 		{599BA654-64EB-4C1C-B191-22AFDD3CFC38} = {599BA654-64EB-4C1C-B191-22AFDD3CFC38}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlDictionaryMergeTool", "..\XamlDictionaryMergeTool\XamlDictionaryMergeTool.csproj", "{599BA654-64EB-4C1C-B191-22AFDD3CFC38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamlDictionaryMergeTool", "XamlDictionaryMergeTool\XamlDictionaryMergeTool.csproj", "{599BA654-64EB-4C1C-B191-22AFDD3CFC38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{123DD6C8-2DD7-4A83-BDBF-A5ACE5D30BEE}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		LICENSE = LICENSE
+		README.md = README.md
+		WpfResourceDictionaryMerger.sln.DotSettings = WpfResourceDictionaryMerger.sln.DotSettings
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +45,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36AB57B7-92C0-44A0-A234-3545EBD8C01A}
 	EndGlobalSection
 EndGlobal

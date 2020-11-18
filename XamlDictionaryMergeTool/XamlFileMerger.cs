@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Linq;
+
+// ReSharper disable UnusedVariable
 
 namespace XamlDictionaryMergeTool
 {
@@ -12,7 +12,9 @@ namespace XamlDictionaryMergeTool
         public static XElement MergeXamlFiles(XElement first, XElement second)
         {
             if (first == null || second == null)
+            {
                 throw new NullReferenceException();
+            }
 
             XElement result = new XElement(first);
             MergeAttributes(result, second.Attributes());
@@ -32,9 +34,9 @@ namespace XamlDictionaryMergeTool
             foreach (var elem in nodes)
             {
                 if (elem is XElement || elem is XComment)
+                {
                     result.Add(elem);
-                
-
+                }
             }
         }
 
@@ -42,7 +44,7 @@ namespace XamlDictionaryMergeTool
         {
             foreach (var attr in moreAttributes)
             {
-                if (!elem.Attributes().Any(elemAttr => elemAttr.ToString() == attr.ToString()))
+                if (elem.Attributes().All(elemAttr => elemAttr.ToString() != attr.ToString()))
                 {
                     elem.Add(new XAttribute(attr));
                 }

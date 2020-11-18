@@ -27,5 +27,5 @@
     <Setter Property="FontSize" Value="{StaticResource FontSize.Large}" />
     <Setter Property="Padding" Value="{StaticResource Thickness.Normal}" />
   </Style>
-  <!--This XAML merge infrastructure was provided by http://michaelscodingspot.com/-->
+  <!--This XAML merge infrastructure was provided by https://ziyucai1984.github.io/-->
 </ResourceDictionary>
